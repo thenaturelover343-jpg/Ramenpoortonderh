@@ -519,7 +519,7 @@ ul  { list-style: none; }
 .section { padding: 96px 0; }
 .section--alt  { background: var(--clr-surface); }
 .section--dark {
-  background: linear-gradient(135deg, #1A4033 0%, #2D8C6E 100%);
+  background: linear-gradient(180deg, #111111 0%, #1A1A1A 100%);
 }
 
 .section__header {
@@ -553,9 +553,9 @@ ul  { list-style: none; }
   line-height: 1.75;
 }
 
-.section--dark .section__eyebrow { color: var(--clr-accent); }
+.section--dark .section__eyebrow { color: rgba(255, 255, 255, 0.62); }
 .section--dark .section__title   { color: #fff; }
-.section--dark .section__desc    { color: rgba(255, 255, 255, 0.7); }
+.section--dark .section__desc    { color: rgba(255, 255, 255, 0.72); }
 
 /* ============================================================
    SERVICE CARDS
@@ -577,13 +577,13 @@ ul  { list-style: none; }
 .service-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--clr-accent);
+  border-color: #111111;
 }
 
 .service-card__icon {
   width: 56px; height: 56px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--clr-accent), rgba(45, 140, 110, 0.18));
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -592,7 +592,7 @@ ul  { list-style: none; }
 
 .service-card__icon svg {
   width: 28px; height: 28px;
-  color: var(--clr-primary-dark);
+  color: #FFFFFF;
 }
 
 .service-card__title {
@@ -613,7 +613,7 @@ ul  { list-style: none; }
 .service-card__link {
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--clr-primary);
+  color: #111111;
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -642,7 +642,7 @@ ul  { list-style: none; }
 .about__img-wrap {
   border-radius: var(--radius-xl);
   overflow: hidden;
-  background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-primary) 60%, var(--clr-primary-dark) 100%);
+  background: linear-gradient(180deg, #111111 0%, #2B2B2B 100%);
   height: 460px;
   display: flex;
   align-items: center;
@@ -671,7 +671,7 @@ ul  { list-style: none; }
   font-family: var(--font-heading);
   font-size: 2rem;
   font-weight: 800;
-  color: var(--clr-primary);
+  color: #111111;
   line-height: 1;
 }
 
@@ -707,7 +707,7 @@ ul  { list-style: none; }
 .about__feature-icon {
   width: 40px; height: 40px;
   border-radius: var(--radius-sm);
-  background: rgba(45, 140, 110, 0.1);
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -716,7 +716,7 @@ ul  { list-style: none; }
 
 .about__feature-icon svg {
   width: 20px; height: 20px;
-  color: var(--clr-primary);
+  color: #FFFFFF;
 }
 
 .about__feature-title {
@@ -755,20 +755,20 @@ ul  { list-style: none; }
   text-align: center;
   padding: 40px 28px;
   border-radius: var(--radius-lg);
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   transition: var(--transition);
 }
 
 .feature-item:hover {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
   transform: translateY(-4px);
 }
 
 .feature-item__icon {
   width: 64px; height: 64px;
   border-radius: 50%;
-  background: rgba(168, 213, 186, 0.18);
+  background: #FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -777,7 +777,7 @@ ul  { list-style: none; }
 
 .feature-item__icon svg {
   width: 30px; height: 30px;
-  color: var(--clr-accent);
+  color: #111111;
 }
 
 .feature-item__title {
@@ -804,7 +804,7 @@ ul  { list-style: none; }
 .cta-wrap { padding: 0 0 96px; }
 
 .cta-banner {
-  background: linear-gradient(135deg, var(--clr-primary-dark), var(--clr-primary));
+  background: linear-gradient(180deg, #111111 0%, #1A1A1A 100%);
   border-radius: var(--radius-xl);
   padding: 72px 48px;
   text-align: center;
@@ -827,7 +827,7 @@ ul  { list-style: none; }
   position: absolute;
   width: 300px; height: 300px;
   border-radius: 50%;
-  background: rgba(168, 213, 186, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   bottom: -80px; left: -60px;
   pointer-events: none;
 }
@@ -865,7 +865,7 @@ ul  { list-style: none; }
    ============================================================ */
 .page-hero {
   padding: 140px 0 72px;
-  background: linear-gradient(135deg, #1A4033 0%, #2D8C6E 100%);
+  background: linear-gradient(180deg, #111111 0%, #1A1A1A 100%);
   position: relative;
   overflow: hidden;
 }
@@ -875,7 +875,7 @@ ul  { list-style: none; }
   position: absolute;
   width: 500px; height: 500px;
   border-radius: 50%;
-  background: rgba(168, 213, 186, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   top: -150px; right: -100px;
   pointer-events: none;
 }
@@ -885,7 +885,7 @@ ul  { list-style: none; }
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--clr-accent);
+  color: rgba(255, 255, 255, 0.62);
   margin-bottom: 12px;
 }
 
@@ -924,7 +924,7 @@ ul  { list-style: none; }
 
 .dienst-item:hover {
   box-shadow: var(--shadow-lg);
-  border-color: var(--clr-accent);
+  border-color: #111111;
 }
 
 .dienst-item__header {
@@ -937,7 +937,7 @@ ul  { list-style: none; }
 .dienst-item__icon {
   width: 64px; height: 64px;
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--clr-accent), rgba(45, 140, 110, 0.25));
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -946,7 +946,7 @@ ul  { list-style: none; }
 
 .dienst-item__icon svg {
   width: 32px; height: 32px;
-  color: var(--clr-primary-dark);
+  color: #FFFFFF;
 }
 
 .dienst-item__title {
@@ -960,7 +960,7 @@ ul  { list-style: none; }
 
 .dienst-item__subtitle {
   font-size: 0.875rem;
-  color: var(--clr-primary);
+  color: #111111;
   font-weight: 600;
   letter-spacing: 0.3px;
 }
@@ -1014,12 +1014,12 @@ ul  { list-style: none; }
 .team-card:hover {
   transform: translateY(-6px);
   box-shadow: var(--shadow-lg);
-  border-color: var(--clr-accent);
+  border-color: #111111;
 }
 
 .team-card__photo {
   height: 210px;
-  background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-primary) 100%);
+  background: linear-gradient(180deg, #111111 0%, #2A2A2A 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1038,7 +1038,7 @@ ul  { list-style: none; }
 
 .team-card__role {
   font-size: 0.85rem;
-  color: var(--clr-primary);
+  color: #111111;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -1060,8 +1060,8 @@ ul  { list-style: none; }
   display: inline-block;
   padding: 4px 10px;
   border-radius: 100px;
-  background: rgba(45, 140, 110, 0.08);
-  color: var(--clr-primary);
+  background: #F4F4F4;
+  color: #111111;
   font-size: 0.74rem;
   font-weight: 600;
 }
@@ -1127,11 +1127,11 @@ ul  { list-style: none; }
   appearance: none;
 }
 
-.form-control::placeholder { color: #8FB0A3; }
+.form-control::placeholder { color: #9A9A9A; }
 
 .form-control:focus {
-  border-color: var(--clr-primary);
-  box-shadow: 0 0 0 3px rgba(45, 140, 110, 0.12);
+  border-color: #111111;
+  box-shadow: 0 0 0 3px rgba(17, 17, 17, 0.08);
   background: #fff;
 }
 
@@ -1166,7 +1166,7 @@ select.form-control { cursor: pointer; }
 .contact-detail__icon {
   width: 46px; height: 46px;
   border-radius: var(--radius-md);
-  background: rgba(45, 140, 110, 0.1);
+  background: #111111;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1175,7 +1175,7 @@ select.form-control { cursor: pointer; }
 
 .contact-detail__icon svg {
   width: 22px; height: 22px;
-  color: var(--clr-primary);
+  color: #FFFFFF;
 }
 
 .contact-detail__label {
@@ -1195,7 +1195,7 @@ select.form-control { cursor: pointer; }
 }
 
 .contact-detail__value a {
-  color: var(--clr-primary);
+  color: #111111;
   transition: var(--transition);
 }
 .contact-detail__value a:hover { text-decoration: underline; }
@@ -1215,7 +1215,7 @@ select.form-control { cursor: pointer; }
   overflow: hidden;
   border: 1px solid var(--clr-border);
   height: 220px;
-  background: linear-gradient(135deg, var(--clr-accent), var(--clr-primary));
+  background: linear-gradient(180deg, #111111 0%, #2A2A2A 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1284,7 +1284,7 @@ select.form-control { cursor: pointer; }
 .footer__contact-line svg {
   width: 14px; height: 14px;
   flex-shrink: 0;
-  color: var(--clr-accent);
+  color: #FFFFFF;
 }
 
 .footer__heading {
@@ -1309,7 +1309,7 @@ select.form-control { cursor: pointer; }
   transition: var(--transition);
 }
 
-.footer__list a:hover { color: var(--clr-accent); }
+.footer__list a:hover { color: #FFFFFF; }
 
 .footer__bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
