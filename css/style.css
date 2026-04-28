@@ -5,16 +5,15 @@
 
 /* === CSS VARIABLES === */
 :root {
-  --clr-primary:       #0B0B0F;
-  --clr-primary-light: #16161D;
-  --clr-primary-dark:  #050508;
-  --clr-accent:        #7C5CFF;
-  --clr-accent-2:      #35C2FF;
-  --clr-bg:            #050508;
-  --clr-surface:       #101019;
-  --clr-text:          #F5F7FA;
-  --clr-text-muted:    #A7ADBB;
-  --clr-border:        rgba(255, 255, 255, 0.10);
+  --clr-primary:       #111111;
+  --clr-primary-light: #1A1A1A;
+  --clr-primary-dark:  #000000;
+  --clr-accent:        #111111;
+  --clr-bg:            #FFFFFF;
+  --clr-surface:       #FFFFFF;
+  --clr-text:          #111111;
+  --clr-text-muted:    #6B6B6B;
+  --clr-border:        #EAEAEA;
 
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -24,9 +23,9 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --shadow-sm: 0 8px 24px rgba(0, 0, 0, 0.28);
-  --shadow-md: 0 20px 50px rgba(0, 0, 0, 0.38);
-  --shadow-lg: 0 36px 90px rgba(0, 0, 0, 0.48);
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 16px 40px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 28px 80px rgba(0, 0, 0, 0.12);
 
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -45,9 +44,7 @@ html {
 
 body {
   font-family: var(--font-body);
-  background:
-    radial-gradient(circle at top, rgba(124, 92, 255, 0.14), transparent 28%),
-    linear-gradient(180deg, #050508 0%, #0B0B0F 100%);
+  background: var(--clr-bg);
   color: var(--clr-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -72,9 +69,9 @@ ul  { list-style: none; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 16px 0;
-  background: rgba(5, 5, 8, 0.78);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
   transition: var(--transition);
 }
@@ -94,7 +91,7 @@ ul  { list-style: none; }
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #111111;
   letter-spacing: -0.2px;
 }
 
@@ -117,8 +114,8 @@ ul  { list-style: none; }
 
 .navbar__link:hover,
 .navbar__link.active {
-  color: #FFFFFF;
-  background: rgba(255, 255, 255, 0.08);
+  color: #111111;
+  background: rgba(17, 17, 17, 0.06);
 }
 
 .navbar__cta { margin-left: 12px; }
@@ -137,7 +134,7 @@ ul  { list-style: none; }
   display: block;
   width: 24px;
   height: 2px;
-  background: #FFFFFF;
+  background: var(--clr-text);
   border-radius: 2px;
   transition: var(--transition);
 }
@@ -186,23 +183,24 @@ ul  { list-style: none; }
 }
 
 .btn--primary {
-  background: linear-gradient(135deg, var(--clr-accent) 0%, var(--clr-accent-2) 100%);
+  background: #111111;
   color: #fff;
-  border-color: transparent;
+  border-color: #111111;
 }
 .btn--primary:hover {
+  background: #000000;
+  border-color: #000000;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
-  filter: brightness(1.04);
 }
 
 .btn--outline {
   background: transparent;
-  color: #FFFFFF;
-  border-color: rgba(255, 255, 255, 0.22);
+  color: #111111;
+  border-color: #111111;
 }
 .btn--outline:hover {
-  background: rgba(255, 255, 255, 0.06);
+  background: #111111;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -221,13 +219,13 @@ ul  { list-style: none; }
 
 .btn--white {
   background: #fff;
-  color: #0B0B0F;
+  color: #111111;
   border-color: #fff;
 }
 .btn--white:hover {
-  background: #F5F7FA;
+  background: var(--clr-bg);
   transform: translateY(-2px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .btn--sm  { padding: 8px 20px;  font-size: 0.825rem; }
@@ -241,9 +239,8 @@ ul  { list-style: none; }
   display: flex;
   align-items: center;
   background:
-    radial-gradient(circle at 20% 20%, rgba(124, 92, 255, 0.22), transparent 28%),
-    radial-gradient(circle at 80% 15%, rgba(53, 194, 255, 0.16), transparent 24%),
-    linear-gradient(180deg, #050508 0%, #0B0B0F 100%);
+    radial-gradient(circle at top center, rgba(0, 0, 0, 0.03), transparent 32%),
+    linear-gradient(180deg, #FFFFFF 0%, #FAFAFA 100%);
   position: relative;
   overflow: hidden;
   padding: 120px 0 0;
