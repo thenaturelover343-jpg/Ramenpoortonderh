@@ -91,7 +91,7 @@ ul  { list-style: none; }
   font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--clr-primary);
+  color: #111111;
   letter-spacing: -0.2px;
 }
 
@@ -114,8 +114,8 @@ ul  { list-style: none; }
 
 .navbar__link:hover,
 .navbar__link.active {
-  color: var(--clr-primary);
-  background: rgba(45, 140, 110, 0.08);
+  color: #111111;
+  background: rgba(17, 17, 17, 0.06);
 }
 
 .navbar__cta { margin-left: 12px; }
@@ -183,24 +183,24 @@ ul  { list-style: none; }
 }
 
 .btn--primary {
-  background: var(--clr-primary);
+  background: #111111;
   color: #fff;
-  border-color: var(--clr-primary);
+  border-color: #111111;
 }
 .btn--primary:hover {
-  background: var(--clr-primary-dark);
-  border-color: var(--clr-primary-dark);
+  background: #000000;
+  border-color: #000000;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
 .btn--outline {
   background: transparent;
-  color: var(--clr-primary);
-  border-color: var(--clr-primary);
+  color: #111111;
+  border-color: #111111;
 }
 .btn--outline:hover {
-  background: var(--clr-primary);
+  background: #111111;
   color: #fff;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
@@ -219,7 +219,7 @@ ul  { list-style: none; }
 
 .btn--white {
   background: #fff;
-  color: var(--clr-primary);
+  color: #111111;
   border-color: #fff;
 }
 .btn--white:hover {
@@ -533,7 +533,7 @@ ul  { list-style: none; }
   font-weight: 700;
   letter-spacing: 2.5px;
   text-transform: uppercase;
-  color: var(--clr-primary);
+  color: #111111;
   margin-bottom: 12px;
 }
 
@@ -1369,12 +1369,12 @@ select.form-control { cursor: pointer; }
   display: none;
   align-items: center;
   gap: 12px;
-  background: rgba(45, 140, 110, 0.08);
-  border: 1px solid var(--clr-accent);
+  background: rgba(17, 17, 17, 0.04);
+  border: 1px solid #111111;
   border-radius: var(--radius-md);
   padding: 16px 20px;
   font-size: 0.9rem;
-  color: var(--clr-primary-dark);
+  color: #111111;
   font-weight: 500;
   margin-top: 16px;
 }
@@ -1384,5 +1384,5 @@ select.form-control { cursor: pointer; }
 .form-success svg {
   width: 20px; height: 20px;
   flex-shrink: 0;
-  color: var(--clr-primary);
+  color: #111111;
 }
