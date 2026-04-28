@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Neem contact op met Revitalis – paramedisch centrum in Brussel. Adres, openingsuren en online afspraakformulier." />
+  <title>Contact – Revitalis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" role="banner">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__logo">Revita<span>lis</span></a>
+        <nav aria-label="Hoofdnavigatie">
+          <ul class="navbar__nav" id="mainNav">
+            <li><a href="index.html"    class="navbar__link">Home</a></li>
+            <li><a href="diensten.html" class="navbar__link">Diensten</a></li>
+            <li><a href="team.html"     class="navbar__link">Ons Team</a></li>
+            <li><a href="contact.html"  class="navbar__link">Contact</a></li>
+            <li class="navbar__cta">
+              <a href="contact.html" class="btn btn--primary btn--sm">Afspraak maken</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="navbar__hamburger" aria-label="Menu openen" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero__eyebrow">Kom langs of stuur een bericht</p>
+        <h1 class="page-hero__title">Neem contact op</h1>
+        <p class="page-hero__desc">
+          Heeft u een vraag, wilt u een afspraak maken of meer informatie over
+          onze diensten? Wij helpen u graag verder.
+        </p>
+      </div>
+      <div class="wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px;">
+          <path fill="#F8FAF9" d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- CONTACT GRID -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- FORM -->
+          <div class="reveal">
+            <div class="contact-form">
+              <h2 class="contact-form__title" id="contact-title">Stuur ons een bericht</h2>
+              <p class="contact-form__subtitle">Wij antwoorden binnen 24 uur op werkdagen.</p>
+
+              <form id="contactForm" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName">Voornaam</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      class="form-control"
+                      placeholder="Jan"
+                      required
+                      autocomplete="given-name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName">Achternaam</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      class="form-control"
+                      placeholder="Janssen"
+                      required
+                      autocomplete="family-name"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">E-mailadres</label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      class="form-control"
+                      placeholder="jan@voorbeeld.be"
+                      required
+                      autocomplete="email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Telefoonnummer</label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      class="form-control"
+                      placeholder="0470 00 00 00"
+                      autocomplete="tel"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="dienst">Dienst</label>
+                  <select id="dienst" name="dienst" class="form-control">
+                    <option value="">— Kies een dienst —</option>
+                    <option value="kinesitherapie">Kinesitherapie</option>
+                    <option value="osteopathie">Osteopathie</option>
+                    <option value="voeding">Voeding &amp; Diëtetiek</option>
+                    <option value="coaching">Coaching</option>
+                    <option value="verloskunde">Verloskunde</option>
+                    <option value="algemeen">Algemene vraag</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Bericht</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-control"
+                    placeholder="Vertel ons uw situatie of stel uw vraag…"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary" style="width:100%;justify-content:center;">
+                  Bericht verzenden
+                </button>
+
+                <div class="form-success" role="alert" aria-live="polite">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  Uw bericht is verzonden! Wij nemen zo snel mogelijk contact met u op.
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+          <!-- INFO -->
+          <div class="contact-info reveal">
+            <h2 class="contact-info__title">Contactgegevens</h2>
+            <p class="contact-info__subtitle">U kunt ons ook rechtstreeks bereiken via onderstaande gegevens.</p>
+
+            <!-- Adres -->
+            <div class="contact-detail">
+              <div class="contact-detail__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail__label">Adres</p>
+                <p class="contact-detail__value">
+                  Rue Neerveld 57<br>
+                  1200 Woluwe-Saint-Lambert<br>
+                  Brussel, België
+                </p>
+              </div>
+            </div>
+
+            <!-- Telefoon -->
+            <div class="contact-detail">
+              <div class="contact-detail__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail__label">Telefoon</p>
+                <p class="contact-detail__value">
+                  <a href="tel:004724619508">0472/61 95 08</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- E-mail -->
+            <div class="contact-detail">
+              <div class="contact-detail__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail__label">E-mail</p>
+                <p class="contact-detail__value">
+                  <a href="mailto:info@revitalis.be">info@revitalis.be</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- Openingsuren -->
+            <div class="contact-detail">
+              <div class="contact-detail__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+              </div>
+              <div>
+                <p class="contact-detail__label">Openingsuren</p>
+                <div class="hours-table">
+                  <span class="hours-day">Maandag – Vrijdag</span>
+                  <span class="hours-time">8:00 – 19:00</span>
+                  <span class="hours-day">Zaterdag</span>
+                  <span class="hours-time">8:00 – 13:00</span>
+                  <span class="hours-day">Zondag</span>
+                  <span class="hours-time">Gesloten</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Map placeholder -->
+            <div class="map-placeholder" aria-label="Kaartlocatie Rue Neerveld 57 Brussel">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 6.75V15m6-6v8.25m.503 3.498 4.875-2.437c.381-.19.622-.58.622-1.006V4.82c0-.836-.88-1.38-1.628-1.006l-3.869 1.934c-.317.159-.69.159-1.006 0L9.503 3.252a1.125 1.125 0 0 0-1.006 0L3.622 5.689C3.24 5.88 3 6.27 3 6.695V19.18c0 .836.88 1.38 1.628 1.006l3.869-1.934c.317-.159.69-.159 1.006 0l4.994 2.497c.317.158.69.158 1.006 0Z" />
+              </svg>
+              <span>Rue Neerveld 57 · 1200 Brussel</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRAKTISCHE INFO -->
+    <section class="section section--alt" aria-labelledby="practical-title">
+      <div class="container">
+        <div class="section__header reveal">
+          <p class="section__eyebrow">Praktisch</p>
+          <h2 class="section__title" id="practical-title">Hoe ons te bereiken</h2>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card reveal reveal-d1">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Met de auto</h3>
+            <p class="service-card__desc">
+              Gratis parkeerplaatsen beschikbaar in de straat en in de buurt
+              van het Woluwe Shopping Center. Ring 0 (Brussel) - afrit Woluwe.
+            </p>
+          </div>
+
+          <div class="service-card reveal reveal-d2">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Met het openbaar vervoer</h3>
+            <p class="service-card__desc">
+              Metro: lijn 1 &amp; 5, halte Roodebeek (5 min. stappen).
+              Bus: MIVB-lijnen 27, 79, 80. Tram: lijn 39.
+            </p>
+          </div>
+
+          <div class="service-card reveal reveal-d3">
+            <div class="service-card__icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+              </svg>
+            </div>
+            <h3 class="service-card__title">Toegankelijkheid</h3>
+            <p class="service-card__desc">
+              Ons centrum is volledig toegankelijk voor rolstoelgebruikers en
+              personen met beperkte mobiliteit. Lift aanwezig.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Revitalis</div>
+          <p class="footer__tagline">Paramedisch centrum in Brussel voor kinesitherapie, osteopathie, voeding en coaching.</p>
+          <div class="footer__contact-line">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z" /></svg>
+            0472/61 95 08
+          </div>
+          <div class="footer__contact-line">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+            info@revitalis.be
+          </div>
+        </div>
+        <div>
+          <p class="footer__heading">Navigatie</p>
+          <ul class="footer__list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="team.html">Ons Team</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Diensten</p>
+          <ul class="footer__list">
+            <li><a href="diensten.html#kinesitherapie">Kinesitherapie</a></li>
+            <li><a href="diensten.html#osteopathie">Osteopathie</a></li>
+            <li><a href="diensten.html#voeding">Voeding</a></li>
+            <li><a href="diensten.html#coaching">Coaching</a></li>
+            <li><a href="diensten.html#verloskunde">Verloskunde</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__heading">Locatie</p>
+          <ul class="footer__list">
+            <li><a href="#">Rue Neerveld 57</a></li>
+            <li><a href="#">1200 Brussel</a></li>
+            <li><a href="#">Ma–Vr: 8:00–19:00</a></li>
+            <li><a href="#">Za: 8:00–13:00</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 Revitalis. Alle rechten voorbehouden.</p>
+        <nav class="footer__bottom-links" aria-label="Juridische links">
+          <a href="#">Privacybeleid</a>
+          <a href="#">Gebruiksvoorwaarden</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
