@@ -89,10 +89,10 @@ ul  { list-style: none; }
 
 .navbar__logo {
   font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--clr-primary);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.2px;
 }
 
 .navbar__logo span { color: var(--clr-text); }
