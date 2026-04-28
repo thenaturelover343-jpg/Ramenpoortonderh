@@ -431,6 +431,13 @@ ul  { list-style: none; }
 }
 
 @media (max-width: 768px) {
+  .wave-divider {
+    overflow: hidden;
+  }
+  .wave-divider svg {
+    width: 100% !important;
+    height: 48px !important;
+  }
   .hero {
     min-height: auto;
     padding: 96px 0 0;
