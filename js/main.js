@@ -1,4 +1,4 @@
-/* Revitalis – main.js */
+/* raamenpoortonderhoud.be – main.js */
 
 document.addEventListener('DOMContentLoaded', () => {
 
