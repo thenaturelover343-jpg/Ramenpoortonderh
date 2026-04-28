@@ -5,15 +5,15 @@
 
 /* === CSS VARIABLES === */
 :root {
-  --clr-primary:       #111111;
-  --clr-primary-light: #2A2A2A;
-  --clr-primary-dark:  #000000;
-  --clr-accent:        #4F8CFF;
-  --clr-bg:            #F5F6F8;
+  --clr-primary:       #2D8C6E;
+  --clr-primary-light: #3DAA87;
+  --clr-primary-dark:  #1E6350;
+  --clr-accent:        #A8D5BA;
+  --clr-bg:            #F8FAF9;
   --clr-surface:       #FFFFFF;
-  --clr-text:          #111111;
-  --clr-text-muted:    #5F6673;
-  --clr-border:        #E7EAF0;
+  --clr-text:          #1A2E25;
+  --clr-text-muted:    #5A7A6A;
+  --clr-border:        #DFF0E8;
 
   --font-heading: 'Plus Jakarta Sans', sans-serif;
   --font-body:    'Inter', sans-serif;
@@ -23,9 +23,9 @@
   --radius-lg: 24px;
   --radius-xl: 32px;
 
-  --shadow-sm: 0 2px 8px rgba(17, 17, 17, 0.05);
-  --shadow-md: 0 12px 32px rgba(17, 17, 17, 0.08);
-  --shadow-lg: 0 20px 60px rgba(17, 17, 17, 0.10);
+  --shadow-sm: 0 2px 8px  rgba(45, 140, 110, 0.08);
+  --shadow-md: 0 8px 24px rgba(45, 140, 110, 0.12);
+  --shadow-lg: 0 16px 48px rgba(45, 140, 110, 0.16);
 
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -69,7 +69,7 @@ ul  { list-style: none; }
   top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 16px 0;
-  background: rgba(255, 255, 255, 0.88);
+  background: rgba(248, 250, 249, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid transparent;
@@ -114,8 +114,8 @@ ul  { list-style: none; }
 
 .navbar__link:hover,
 .navbar__link.active {
-  color: var(--clr-text);
-  background: rgba(17, 17, 17, 0.05);
+  color: var(--clr-primary);
+  background: rgba(45, 140, 110, 0.08);
 }
 
 .navbar__cta { margin-left: 12px; }
@@ -183,24 +183,24 @@ ul  { list-style: none; }
 }
 
 .btn--primary {
-  background: var(--clr-text);
+  background: var(--clr-primary);
   color: #fff;
-  border-color: var(--clr-text);
+  border-color: var(--clr-primary);
 }
 .btn--primary:hover {
-  background: #000;
-  border-color: #000;
+  background: var(--clr-primary-dark);
+  border-color: var(--clr-primary-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
 }
 
 .btn--outline {
   background: transparent;
-  color: var(--clr-text);
-  border-color: var(--clr-border);
+  color: var(--clr-primary);
+  border-color: var(--clr-primary);
 }
 .btn--outline:hover {
-  background: var(--clr-text);
+  background: var(--clr-primary);
   color: #fff;
   transform: translateY(-2px);
   box-shadow: var(--shadow-md);
