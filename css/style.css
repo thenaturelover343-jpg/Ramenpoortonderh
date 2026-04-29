@@ -799,6 +799,150 @@ ul  { list-style: none; }
 }
 
 /* ============================================================
+   VOOR & NA SECTIE
+   ============================================================ */
+.before-after-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  margin-bottom: 48px;
+}
+
+.ba-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--clr-border);
+  box-shadow: var(--shadow-sm);
+  background: var(--clr-surface);
+  transition: var(--transition);
+}
+
+.ba-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.ba-card__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.ba-card__img {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: #E8F0F8;
+}
+
+.ba-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Placeholder when image fails to load */
+.ba-card__img.ba-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ba-card__img--before.ba-placeholder {
+  background: linear-gradient(135deg, #CBD5E1 0%, #94A3B8 100%);
+}
+
+.ba-card__img--before.ba-placeholder::after {
+  content: 'Foto\Avoeg toe';
+  white-space: pre;
+  text-align: center;
+  font-size: 0.75rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.ba-card__img--after.ba-placeholder {
+  background: linear-gradient(135deg, #0F2D4A 0%, #1A4A73 100%);
+}
+
+.ba-card__img--after.ba-placeholder::after {
+  content: 'Foto\Avoeg toe';
+  white-space: pre;
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  font-weight: 500;
+}
+
+.ba-card__img--before { border-right: 2px solid #fff; }
+
+.ba-card__label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 100px;
+}
+
+.ba-card__label--before {
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+}
+
+.ba-card__label--after {
+  background: #C9963A;
+  color: #fff;
+}
+
+.ba-card__footer {
+  padding: 16px 20px;
+  border-top: 1px solid var(--clr-border);
+}
+
+.ba-card__tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #C9963A;
+  margin-bottom: 6px;
+}
+
+.ba-card__desc {
+  font-size: 0.875rem;
+  color: var(--clr-text-muted);
+  line-height: 1.5;
+}
+
+.ba-cta {
+  text-align: center;
+  padding: 32px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.ba-cta p {
+  font-size: 1rem;
+  color: var(--clr-text-muted);
+}
+
+@media (max-width: 900px) {
+  .before-after-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 600px) {
+  .before-after-grid { grid-template-columns: 1fr; }
+  .ba-card__img { height: 160px; }
+}
+
+/* ============================================================
    CTA BANNER
    ============================================================ */
 .cta-wrap { padding: 0 0 96px; }
