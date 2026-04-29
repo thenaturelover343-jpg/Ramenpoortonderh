@@ -519,7 +519,7 @@ ul  { list-style: none; }
 .section { padding: 96px 0; }
 .section--alt  { background: var(--clr-surface); }
 .section--dark {
-  background: linear-gradient(135deg, #08192A 0%, #0F2D4A 100%);
+  background: linear-gradient(135deg, #0F2D4A 0%, #1A4A73 100%);
 }
 
 .section__header {
@@ -804,7 +804,7 @@ ul  { list-style: none; }
 .cta-wrap { padding: 0 0 96px; }
 
 .cta-banner {
-  background: linear-gradient(135deg, #08192A 0%, #0F2D4A 100%);
+  background: linear-gradient(135deg, #0F2D4A 0%, #1A4A73 100%);
   border-radius: var(--radius-xl);
   padding: 72px 48px;
   text-align: center;
@@ -865,7 +865,7 @@ ul  { list-style: none; }
    ============================================================ */
 .page-hero {
   padding: 140px 0 72px;
-  background: linear-gradient(135deg, #08192A 0%, #0F2D4A 100%);
+  background: linear-gradient(135deg, #0F2D4A 0%, #1A4A73 100%);
   position: relative;
   overflow: hidden;
 }
@@ -1245,8 +1245,8 @@ select.form-control { cursor: pointer; }
    FOOTER
    ============================================================ */
 .footer {
-  background: var(--clr-primary-dark);
-  color: rgba(255, 255, 255, 0.65);
+  background: var(--clr-primary);
+  color: rgba(255, 255, 255, 0.75);
   padding: 72px 0 32px;
 }
 
