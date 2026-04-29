@@ -441,6 +441,55 @@ ul  { list-style: none; }
   flex-shrink: 0;
 }
 
+/* Hero voor/na foto */
+.hero__ba-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.hero__ba-img {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+}
+
+.hero__ba-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.hero__ba-img:hover img { transform: scale(1.04); }
+
+.hero__ba-label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  backdrop-filter: blur(4px);
+}
+
+.hero__ba-label--voor {
+  background: rgba(0,0,0,0.55);
+  color: #fff;
+}
+
+.hero__ba-label--na {
+  background: #C9963A;
+  color: #fff;
+}
+
 @media (max-width: 900px) {
   .hero__inner { gap: 40px; }
 }
