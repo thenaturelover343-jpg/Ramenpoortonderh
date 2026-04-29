@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu   = document.querySelector('.navbar__nav');
 
   hamburger?.addEventListener('click', () => {
-    const isOpen = navMenu.classList.toggle('open');
+    const isOpen = navMenu?.classList.toggle('open');
     hamburger.classList.toggle('open', isOpen);
     hamburger.setAttribute('aria-expanded', String(isOpen));
   });
