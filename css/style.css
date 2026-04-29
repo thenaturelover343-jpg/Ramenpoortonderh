@@ -1245,7 +1245,7 @@ select.form-control { cursor: pointer; }
    FOOTER
    ============================================================ */
 .footer {
-  background: var(--clr-text);
+  background: var(--clr-primary-dark);
   color: rgba(255, 255, 255, 0.65);
   padding: 72px 0 32px;
 }
