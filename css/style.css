@@ -520,9 +520,7 @@ ul  { list-style: none; }
   }
   .hero__stats  {
     gap: 12px;
-    overflow-x: auto;
-    grid-template-columns: repeat(3, minmax(120px, 1fr));
-    padding-bottom: 4px;
+    grid-template-columns: repeat(3, 1fr);
   }
   .hero__stat-number {
     font-size: 1.4rem;
